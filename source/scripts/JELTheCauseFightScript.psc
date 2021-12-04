@@ -1,0 +1,15 @@
+Scriptname JELTheCauseFightScript extends ObjectReference
+
+ObjectReference property JELGreatWelkyndStoneREF Auto
+ObjectReference property ccBGSSSE067_SecretRoomTrigger01 Auto
+ObjectReference property ccBGSSSE067_ActivateAmbushREF Auto
+ObjectReference property PlayerRef Auto
+
+MiscObject property ccBGSSSE067_ARGreatWelkyndStoneItem01 Auto
+
+Event OnActivate(ObjectReference triggerRef)
+	JELGreatWelkyndStoneREF.DisableNoWait(false)
+	PlayerREF.Additem(ccBGSSSE067_ARGreatWelkyndStoneItem01, 1, false)
+	ccBGSSSE067_SecretRoomTrigger01.Activate(ccBGSSSE067_SecretRoomTrigger01, false)
+	ccBGSSSE067_ActivateAmbushREF.Activate(ccBGSSSE067_ActivateAmbushREF, false)
+EndEvent
