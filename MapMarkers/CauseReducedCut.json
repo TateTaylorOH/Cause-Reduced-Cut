@@ -1,0 +1,8 @@
+{
+  "mapMarkers": [
+    {
+      "refID": "CauseReducedCut.esp|831", // Shrine of Mehrunes Dagon (Portal Open)
+      "iconName": "OblivionGateMarker"
+    }
+  ]
+}
